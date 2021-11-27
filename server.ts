@@ -6,8 +6,8 @@ import MainRouter from "./routers/main.router";
 import MintPassRouter from "./routers/mint-pass.router";
 import TimerRouter from "./routers/timer.router";
 
-const PORT: string = process.env.port || config.PORT;
-const HOST: string = process.env.host || config.HOST;
+const PORT: string = process.env.PORT || config.PORT;
+const HOST: string = process.env.HOST || config.HOST;
 
 const app = express();
 
