@@ -3,8 +3,8 @@
     "HOST": "89.108.71.161",
     "ROOT_URL": "https://familyphallusplanet.com/",
     "SSL": {
-        "key": "/etc/letsencrypt/live/nft-cockiz.com/privkey.pem",
-        "cert": "/etc/letsencrypt/live/nft-cockiz.com/fullchain.pem"
+        "key": "/etc/letsencrypt/live/familyphallusplanet.com/privkey.pem",
+        "cert": "/etc/letsencrypt/live/familyphallusplanet.com/fullchain.pem"
     },
     "contract": {
         "mainnet": {
