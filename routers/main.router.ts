@@ -95,11 +95,12 @@ export default router;
 //  FUNCTIONS
 
 function checkDate(birthday) {
-    birthday = new Date(birthday.toNumber() * 1000);
+    birthday = birthday.toNumber();
     if (birthday === 0) {
         return false;
     }
 
-    // return Date.now() > birthday + 1209600000; // current time > birthday + two weeks
-    return Date.now() > birthday + 3600000; // current time > birthday + one hour
+    const currentTime = Date.now() / 1000;
+    // return currentTime > birthday + 1209600; // current time > birthday + two weeks
+    return currentTime > birthday + 3600; // current time > birthday + one hour
 }
