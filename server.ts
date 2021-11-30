@@ -16,8 +16,8 @@ const app = express();
 
 const httpsServer = https.createServer(
     {
-        key: fs.readFileSync("./etc/ssl/privkey.pem"),
-        cert: fs.readFileSync("./etc/ssl/fullchain.pem"),
+        key: fs.readFileSync(config.SSL.key),
+        cert: fs.readFileSync(config.SSL.cert),
     },
     app
 );
