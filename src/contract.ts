@@ -14,7 +14,7 @@ const contractInstance = new ethers.Contract(contract.main, ABI, provider);
 
 export const getBirthday = async (id) => {
     try {
-        const birthday = await contractInstance.getBirthday(id);
+        const birthday = await contractInstance.getBirthday(id - 1);
         return birthday;
     } catch (err) {
         console.error(err);
