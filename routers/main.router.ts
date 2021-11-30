@@ -26,7 +26,7 @@ router.get("/nft/:id", async (req, res) => {
                 res.json(makeNFTdata(bigJson[id]));
             }
         } else {
-            res.status(500).json({
+            res.status(404).json({
                 error: "That phallus has not been make yet",
             });
         }
