@@ -2,14 +2,25 @@ import express from "express";
 import cors from "cors";
 import config from "./config.json";
 
+import fs from "fs";
+import https from "https";
+
 import MainRouter from "./routers/main.router";
 import MintPassRouter from "./routers/mint-pass.router";
 import TimerRouter from "./routers/timer.router";
 
-const PORT: string = process.env.PORT || config.PORT;
+const PORT: number = +process.env.PORT || config.PORT;
 const HOST: string = process.env.HOST || config.HOST;
 
 const app = express();
+
+const httpsServer = https.createServer(
+    {
+        key: fs.readFileSync(config.SSL.key),
+        cert: fs.readFileSync(config.SSL.cert),
+    },
+    app
+);
 
 // =========== MIDDLEWARE ==============
 
@@ -30,6 +41,12 @@ app.get("/", (req, res) => {
 
 // STARTING THE SERVER
 
-app.listen(PORT, HOST, () =>
-    console.log(`Server has been succesfully started! on ${HOST}:${PORT}`)
-);
+if (process.env.NOTSSL) {
+    app.listen(PORT, HOST, 0, () =>
+        console.log(`Server has been succesfully started! on ${HOST}:${PORT}`)
+    );
+} else {
+    httpsServer.listen(PORT, HOST, 0, () =>
+        console.log(`Server has been succesfully started! on ${HOST}:${PORT}`)
+    );
+}

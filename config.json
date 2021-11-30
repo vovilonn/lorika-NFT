@@ -1,17 +1,21 @@
 {
-    "PORT": "3201", 
+    "PORT": 3201,
     "HOST": "89.108.71.161",
     "ROOT_URL": "https://familyphallusplanet.com/",
+    "SSL": {
+        "key": "/etc/letsencrypt/live/nft-cockiz.com/privkey.pem",
+        "cert": "/etc/letsencrypt/live/nft-cockiz.com/fullchain.pem"
+    },
     "contract": {
-       "mainnet": {
-            "main":  "0x5334F2a1d1C0D536E28452A5740D3290067844D7",
-            "mintPass":  "0x5334F2a1d1C0D536E28452A5740D3290067844D7",
+        "mainnet": {
+            "main": "0x5334F2a1d1C0D536E28452A5740D3290067844D7",
+            "mintPass": "0x5334F2a1d1C0D536E28452A5740D3290067844D7",
             "provider": "https://eth-mainnet.alchemyapi.io/v2/uJ3EVtOeopikiLvt7Xx4LgyjPldxjXxk"
-       }, 
-       "testnet": {
-            "main":  "0x68146441aeC7E031338E82c0169562a0407f7dF1",
-            "mintPass":  "0x5334F2a1d1C0D536E28452A5740D3290067844D7",
+        },
+        "testnet": {
+            "main": "0x68146441aeC7E031338E82c0169562a0407f7dF1",
+            "mintPass": "0x5334F2a1d1C0D536E28452A5740D3290067844D7",
             "provider": "https://eth-rinkeby.alchemyapi.io/v2/GMzo7hCZLo9inUXKatPt-O1twOMilvYf"
-       }
+        }
     }
 }
