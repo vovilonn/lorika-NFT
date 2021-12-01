@@ -44,7 +44,7 @@ export function makeNFTdata(jsonObject) {
     const data = {
         image: jsonObject.image,
         lite_image: getLiteImagePath(jsonObject.image),
-        external_url: config.ROOT_URL + `nft/${nftId}`,
+        external_url: config.ROOT_URL + `api/nft/${nftId}`,
         attributes: [
             {
                 value: jsonObject.details.Background.itemName,
