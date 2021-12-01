@@ -32,7 +32,7 @@ export function makeNFTdata(jsonObject) {
     if (!jsonObject) {
         return {};
     }
-    const nftId = jsonObject.fileName.split("#")[1];
+    const nftId = jsonObject.fileName.split("#")[1].split(".")[0];
     const getLiteImagePath = (ipfsPath) => {
         return (
             config.ROOT_URL +
