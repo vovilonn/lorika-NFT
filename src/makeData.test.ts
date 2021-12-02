@@ -41,7 +41,7 @@ const validNFTSample = {
     image: "https://ipfs.io/ipfs/bafybeiey2h4k57ndck7sqovtw7hqxqqv5b2qdn3oagvvxyqg66x3or2kee/Phallus-0.png",
     lite_image:
         "https://familyphallusplanet.com/images/lite/bafybeiey2h4k57ndck7sqovtw7hqxqqv5b2qdn3oagvvxyqg66x3or2kee.png",
-    external_url: "https://familyphallusplanet.com/nft/0.png",
+    external_url: "https://familyphallusplanet.com/api/nft/0",
     attributes: [
         { value: "lilac", trait_type: "Background" },
         { value: "tattooed", trait_type: "Skin" },
@@ -51,11 +51,11 @@ const validNFTSample = {
         { value: "maraca", trait_type: "Accessory" },
     ],
     name: "Phallus #0",
-    id: "0.png",
+    id: "0",
 };
 
 const NFTEmbrionSample = {
-    image: "https://ipfs.io/ipfs/bafybeig66tejqvxespqzvbshpksclybgbzicrsfbgyjitqwc5ordky5xde/Phallus-fetus.png",
+    image: "https://cockiz-test.ru/api/images/unrevealed.gif",
     external_url: "https://familyphallusplanet.com/nft/0",
     attributes: [
         {

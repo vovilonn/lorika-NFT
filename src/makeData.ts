@@ -16,7 +16,7 @@ export function makeLimitedResponse(data, page, limit) {
 
 export function makeEmbrionData(nftId) {
     return {
-        image: "https://ipfs.io/ipfs/bafybeig66tejqvxespqzvbshpksclybgbzicrsfbgyjitqwc5ordky5xde/Phallus-fetus.png",
+        image: "https://cockiz-test.ru/api/images/unrevealed.gif",
         external_url: config.ROOT_URL + `nft/${nftId}`,
         attributes: [
             {
