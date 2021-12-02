@@ -14,16 +14,21 @@ const HOST: string = process.env.HOST || config.HOST;
 
 const app = express();
 
-const httpsServer = https.createServer(
-    {
-        key: fs.readFileSync(config.SSL.key),
-        cert: fs.readFileSync(config.SSL.cert),
-    },
-    app
-);
+let httpsServer = null;
+
+if (!process.env.NOTSSL) {
+    httpsServer = https.createServer(
+        {
+            key: fs.readFileSync(config.SSL.key),
+            cert: fs.readFileSync(config.SSL.cert),
+        },
+        app
+    );
+}
 
 // =========== MIDDLEWARE ==============
 
+app.use(express.static("static"));
 app.use(express.json());
 app.use(cors());
 
