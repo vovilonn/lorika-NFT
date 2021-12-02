@@ -28,7 +28,7 @@ if (!process.env.NOTSSL) {
 
 // =========== MIDDLEWARE ==============
 
-app.use(express.static("static"));
+app.use("/api/images", express.static("static"));
 app.use(express.json());
 app.use(cors());
 
