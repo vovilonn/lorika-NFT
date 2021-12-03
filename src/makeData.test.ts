@@ -94,7 +94,8 @@ describe("Make data: makeLimitedResponse", () => {
             validNFTSample,
             validNFTSample,
         ];
-        expect(makeLimitedResponse(bigData, 0, 5)).toEqual(expectation);
+
+        expect(makeLimitedResponse(bigData, 0, 5, 3333)).toEqual(expectation);
     });
 });
 

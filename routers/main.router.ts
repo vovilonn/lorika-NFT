@@ -40,9 +40,10 @@ router.get("/tokens/:wallet", async (req, res) => {
     res.json(await makeTokensOfOwnerJson(req.params.wallet));
 });
 
-router.get("/pages", (req, res) => {
+router.get("/pages", async (req, res) => {
     const page = req.query.page;
     const limit = req.query.limit || 9;
+    const supply = await getTotalSupply();
 
     if (page < 1) {
         res.json({ error: "page param can't be lower than 1" });
@@ -58,9 +59,11 @@ router.get("/pages", (req, res) => {
         { type: "Accessory", value: req.query.accessory },
     ];
 
-    if (filters.every((filter) => !filter.value)) {
+    if (page * limit - limit > supply) {
+        res.status(404).json({ error: "not yet minted" });
+    } else if (filters.every((filter) => !filter.value)) {
         // if there are no filters
-        res.json(makeLimitedResponse(bigJson, page, limit));
+        res.json(makeLimitedResponse(bigJson, page, limit, supply.toNumber()));
     } else if (page && limit) {
         const filtredJSON = bigJson.filter((nft) => {
             return filters.every((filter) => {
@@ -70,7 +73,9 @@ router.get("/pages", (req, res) => {
                 return true;
             });
         });
-        res.json(makeLimitedResponse(filtredJSON, page, limit));
+        res.json(
+            makeLimitedResponse(filtredJSON, page, limit, supply.toNumber())
+        );
     } else if (page && !limit) {
         res.status(400).json({ error: "missing params: limit" });
     } else if (!page && limit) {

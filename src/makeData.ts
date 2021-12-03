@@ -3,13 +3,19 @@ import config from "../config.json";
 
 const bigJson = require("../files/bigJson.json");
 
-export function makeLimitedResponse(data, page, limit) {
+export function makeLimitedResponse(data, page, limit, supply) {
+    let correctLimit =
+        page * limit > supply ? supply - (page * limit - limit) : limit;
+
     page--;
-    if (page * limit > data.length) {
-        return [...data].splice(page * limit).map((nft) => makeNFTdata(nft));
+
+    if (page * correctLimit > data.length) {
+        return [...data]
+            .splice(page * correctLimit)
+            .map((nft) => makeNFTdata(nft));
     } else {
         return [...data]
-            .splice(page * limit, limit)
+            .splice(page * correctLimit, correctLimit)
             .map((nft, i) => makeNFTdata(nft));
     }
 }
