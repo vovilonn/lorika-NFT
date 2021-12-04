@@ -1,12 +1,12 @@
 import express from "express";
 import { TimerConfig, calcDateDiff } from "../src/timer";
 
-const TIMER_IS_ACTIVE = process.env.TIMER || false;
+const TIMER_IS_ACTIVE = true;
 
 const timerConfig: TimerConfig = {
-    days: 1,
-    hours: 10,
-    minutes: 40,
+    days: 0,
+    hours: 7,
+    minutes: 0,
 }; // сколько времени осталось до события
 
 let dateDifference = calcDateDiff(timerConfig); // миллисекунд до события
