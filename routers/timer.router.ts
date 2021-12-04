@@ -5,8 +5,8 @@ const TIMER_IS_ACTIVE = true;
 
 const timerConfig: TimerConfig = {
     days: 0,
-    hours: 5,
-    minutes: 0,
+    hours: 4,
+    minutes: 20,
 }; // сколько времени осталось до события
 
 let dateDifference = calcDateDiff(timerConfig); // миллисекунд до события
