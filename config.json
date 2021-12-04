@@ -8,7 +8,7 @@
     },
     "contract": {
         "mainnet": {
-            "main": "0x5334F2a1d1C0D536E28452A5740D3290067844D7",
+            "main": "0x6891CAD07E8CE06905CD0cDE20BB6bfe3Ec33167",
             "mintPass": "0x5334F2a1d1C0D536E28452A5740D3290067844D7",
             "provider": "https://eth-mainnet.alchemyapi.io/v2/uJ3EVtOeopikiLvt7Xx4LgyjPldxjXxk"
         },
