@@ -5,7 +5,7 @@ const TIMER_IS_ACTIVE = true;
 
 const timerConfig: TimerConfig = {
     days: 0,
-    hours: 7,
+    hours: 5,
     minutes: 0,
 }; // сколько времени осталось до события
 
