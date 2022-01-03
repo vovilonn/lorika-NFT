@@ -1,0 +1,35 @@
+{
+  "name": " #1",
+  "description": "Lorika is a collection of 10,000 NFTs— unique digital collectibles living on the Ethereum blockchain.Each Trait hand-drawn by a professional artist gives us the opportunity to show you the most beautiful NFT project in the world.Our plans are to evolve every day and eventually create your own metaverse and make owning Lorika a real adventure for you ",
+  "image": "ipfs://NewUriToReplace/1.png",
+  "dna": "274b0a7c2cec3a5e809fbabc23e70fb140bb2de0",
+  "edition": 1,
+  "date": 1636027187028,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Thistle"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Dakrgreen"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Brown  haired"
+    },
+    {
+      "trait_type": "Emotions",
+      "value": "Cunning"
+    },
+    {
+      "trait_type": "Clothes",
+      "value": "Wrinkled corset"
+    },
+    {
+      "trait_type": "Lips",
+      "value": "Colored braces"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

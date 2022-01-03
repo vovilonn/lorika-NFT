@@ -1,7 +1,7 @@
 {
     "PORT": 3201,
-    "HOST": "89.108.71.161",
-    "ROOT_URL": "https://familyphallusplanet.com/",
+    "HOST": "31.31.203.31",
+    "ROOT_URL": "https://api.lorika.io/",
     "SSL": {
         "key": "/etc/letsencrypt/live/familyphallusplanet.com/privkey.pem",
         "cert": "/etc/letsencrypt/live/familyphallusplanet.com/fullchain.pem"
@@ -9,12 +9,10 @@
     "contract": {
         "mainnet": {
             "main": "0x6891CAD07E8CE06905CD0cDE20BB6bfe3Ec33167",
-            "mintPass": "0x5334F2a1d1C0D536E28452A5740D3290067844D7",
             "provider": "https://eth-mainnet.alchemyapi.io/v2/uJ3EVtOeopikiLvt7Xx4LgyjPldxjXxk"
         },
         "testnet": {
-            "main": "0x68146441aeC7E031338E82c0169562a0407f7dF1",
-            "mintPass": "0x5334F2a1d1C0D536E28452A5740D3290067844D7",
+            "main": "0xaED6b4aaab148E0df797Df6F81bFC4A211Eaa6EB",
             "provider": "https://eth-rinkeby.alchemyapi.io/v2/GMzo7hCZLo9inUXKatPt-O1twOMilvYf"
         }
     }

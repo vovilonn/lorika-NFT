@@ -5,9 +5,7 @@ import config from "./config.json";
 import fs from "fs";
 import https from "https";
 
-import MainRouter from "./routers/main.router";
-import MintPassRouter from "./routers/mint-pass.router";
-import TimerRouter from "./routers/timer.router";
+import MainRouter from "./src/routers/main.router";
 
 const PORT: number = +process.env.PORT || config.PORT;
 const HOST: string = process.env.HOST || config.HOST;
@@ -34,8 +32,6 @@ app.use(cors());
 
 // =========== ROUTERS ==============
 
-app.use("/api-mint-pass/", MintPassRouter);
-app.use("/api/timer", TimerRouter);
 app.use("/api", MainRouter);
 
 // =========== ENDPOINTS ==============
