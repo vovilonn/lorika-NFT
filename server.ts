@@ -26,13 +26,13 @@ if (!process.env.NOTSSL) {
 
 // =========== MIDDLEWARE ==============
 
-app.use("/api/images", express.static("static"));
+app.use("/images", express.static("static"));
 app.use(express.json());
 app.use(cors());
 
 // =========== ROUTERS ==============
 
-app.use("/api", MainRouter);
+app.use("/", MainRouter);
 
 // =========== ENDPOINTS ==============
 
