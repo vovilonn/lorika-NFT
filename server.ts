@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import config from "./config.json";
-
+import path from "path";
 import fs from "fs";
 import https from "https";
 
@@ -17,8 +17,8 @@ let httpsServer = null;
 if (!process.env.NOTSSL) {
     httpsServer = https.createServer(
         {
-            key: fs.readFileSync(config.SSL.key),
-            cert: fs.readFileSync(config.SSL.cert),
+            key: fs.readFileSync(path.resolve("./etc/ssl/privkey.pem")),
+            cert: fs.readFileSync(path.resolve("./etc/ssl/fullchain.pem")),
         },
         app
     );
