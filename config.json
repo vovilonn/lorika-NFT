@@ -4,11 +4,11 @@
     "ROOT_URL": "https://api.lorika.io/",
     "contract": {
         "mainnet": {
-            "main": "0x6891CAD07E8CE06905CD0cDE20BB6bfe3Ec33167",
+            "main": "0xC6647C7AA41Bf9047c1D06E09180439EbC909F88",
             "provider": "https://eth-mainnet.alchemyapi.io/v2/uJ3EVtOeopikiLvt7Xx4LgyjPldxjXxk"
         },
         "testnet": {
-            "main": "0xaED6b4aaab148E0df797Df6F81bFC4A211Eaa6EB",
+            "main": "0xC6647C7AA41Bf9047c1D06E09180439EbC909F88",
             "provider": "https://eth-rinkeby.alchemyapi.io/v2/GMzo7hCZLo9inUXKatPt-O1twOMilvYf"
         }
     }
