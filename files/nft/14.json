@@ -1,10 +1,10 @@
 {
-  "name": " #14",
-  "description": "Lorika is a collection of 10,000 NFTs— unique digital collectibles living on the Ethereum blockchain.Each Trait hand-drawn by a professional artist gives us the opportunity to show you the most beautiful NFT project in the world.Our plans are to evolve every day and eventually create your own metaverse and make owning Lorika a real adventure for you ",
+  "name": "LR #14",
+  "description": "Lorika is a collection of 3,333 NFTs— unique digital collectibles living on the Ethereum blockchain.Each Trait hand-drawn by a professional artist gives us the opportunity to show you the most beautiful NFT project in the world.Our plans are to evolve every day and eventually create your own metaverse and make owning Lorika a real adventure for you ",
   "image": "ipfs://NewUriToReplace/14.png",
-  "dna": "0f41da18c72f4d0b0e5832909271d12e5c040158",
+  "dna": "66be2b29df05ca3294d910c41ee1a09d75098719",
   "edition": 14,
-  "date": 1636027354659,
+  "date": 1642075004830,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,40 +12,24 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Aquamarine"
+      "value": "Blue"
     },
     {
       "trait_type": "Hair",
-      "value": "Brunette"
+      "value": "White hair horns"
     },
     {
       "trait_type": "Emotions",
       "value": "Dreaminess"
     },
     {
-      "trait_type": "Secret detail",
-      "value": "1"
-    },
-    {
-      "trait_type": "Accessories",
-      "value": "Piercing white"
-    },
-    {
       "trait_type": "Clothes",
-      "value": "Sheriff suit"
-    },
-    {
-      "trait_type": "Glasses",
-      "value": "Gold glass"
-    },
-    {
-      "trait_type": "Hats",
-      "value": "Crown"
+      "value": "Bloody t shirt"
     },
     {
       "trait_type": "Lips",
-      "value": "Red flirty"
+      "value": "Blue lollipop"
     }
   ],
-  "compiler": "HashLips Art Engine"
+  "compiler": "Lorika_compilation"
 }

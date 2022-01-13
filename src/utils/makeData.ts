@@ -21,7 +21,9 @@ export function makeEmbrionData(nftId) {
 export async function makeTokensOfOwnerJson(wallet) {
     const tokensID = await getTokensOfOwner(wallet);
 
-    return tokensID.map((id) =>
-        fs.readFileSync(path.resolve(`./files/nft/${id}.json`))
-    );
+    return tokensID.map((id) => fs.readFileSync(path.resolve(`./files/nft/${id}.json`)));
+}
+
+export function setCorrectImgURL(nftData) {
+    return { ...nftData, image: `https://api.lorika.io/images/nft/${nftData.edition}.png` };
 }

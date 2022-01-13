@@ -1,35 +1,47 @@
 {
-  "name": " #1",
-  "description": "Lorika is a collection of 10,000 NFTs— unique digital collectibles living on the Ethereum blockchain.Each Trait hand-drawn by a professional artist gives us the opportunity to show you the most beautiful NFT project in the world.Our plans are to evolve every day and eventually create your own metaverse and make owning Lorika a real adventure for you ",
+  "name": "LR #1",
+  "description": "Lorika is a collection of 3,333 NFTs— unique digital collectibles living on the Ethereum blockchain.Each Trait hand-drawn by a professional artist gives us the opportunity to show you the most beautiful NFT project in the world.Our plans are to evolve every day and eventually create your own metaverse and make owning Lorika a real adventure for you ",
   "image": "ipfs://NewUriToReplace/1.png",
-  "dna": "274b0a7c2cec3a5e809fbabc23e70fb140bb2de0",
+  "dna": "10ebb9be65079efe4e4bbcdf06dfc0f0a24db359",
   "edition": 1,
-  "date": 1636027187028,
+  "date": 1642075147076,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Thistle"
+      "value": "Violet"
     },
     {
       "trait_type": "Eyes",
-      "value": "Dakrgreen"
+      "value": "Gray"
     },
     {
       "trait_type": "Hair",
-      "value": "Brown  haired"
+      "value": "Brown  haired horns"
     },
     {
       "trait_type": "Emotions",
-      "value": "Cunning"
+      "value": "Happiness"
+    },
+    {
+      "trait_type": "Secret detail",
+      "value": "1"
     },
     {
       "trait_type": "Clothes",
-      "value": "Wrinkled corset"
+      "value": "Banana anorak"
+    },
+    {
+      "trait_type": "Glasses",
+      "value": "Gold glass"
+    },
+    {
+      "trait_type": "Hats",
+      "value": "Rabbit ears"
     },
     {
       "trait_type": "Lips",
-      "value": "Colored braces"
+      "value": "Smoke"
     }
   ],
-  "compiler": "HashLips Art Engine"
+  "compiler": "Lorika_compilation"
 }

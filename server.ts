@@ -43,11 +43,7 @@ app.get("/", (req, res) => {
 // STARTING THE SERVER
 
 if (process.env.NOTSSL) {
-    app.listen(PORT, HOST, 0, () =>
-        console.log(`Server has been succesfully started! on ${HOST}:${PORT}`)
-    );
+    app.listen(PORT, HOST, 0, () => console.log(`Server has been succesfully started! on ${HOST}:${PORT}`));
 } else {
-    httpsServer.listen(PORT, HOST, 0, () =>
-        console.log(`Server has been succesfully started! on ${HOST}:${PORT}`)
-    );
+    httpsServer.listen(PORT, HOST, 0, () => console.log(`Server has been succesfully started! on ${HOST}:${PORT}`));
 }

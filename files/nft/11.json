@@ -1,35 +1,35 @@
 {
-  "name": " #11",
-  "description": "Lorika is a collection of 10,000 NFTs— unique digital collectibles living on the Ethereum blockchain.Each Trait hand-drawn by a professional artist gives us the opportunity to show you the most beautiful NFT project in the world.Our plans are to evolve every day and eventually create your own metaverse and make owning Lorika a real adventure for you ",
+  "name": "LR #11",
+  "description": "Lorika is a collection of 3,333 NFTs— unique digital collectibles living on the Ethereum blockchain.Each Trait hand-drawn by a professional artist gives us the opportunity to show you the most beautiful NFT project in the world.Our plans are to evolve every day and eventually create your own metaverse and make owning Lorika a real adventure for you ",
   "image": "ipfs://NewUriToReplace/11.png",
-  "dna": "b988cc628af7ac7a9f6f53213d764c23d2c736b3",
+  "dna": "92580a5d5ee792013ec38b591edb7e13aaa3f534",
   "edition": 11,
-  "date": 1636027243156,
+  "date": 1642075009106,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Yellow"
+      "value": "Darkkhaki"
     },
     {
       "trait_type": "Eyes",
-      "value": "Darkgreen"
+      "value": "Aquamarine"
     },
     {
       "trait_type": "Hair",
-      "value": "Brunette"
+      "value": "Human white"
     },
     {
       "trait_type": "Emotions",
-      "value": "Doubt"
+      "value": "Astonishment"
     },
     {
       "trait_type": "Clothes",
-      "value": "Banana anorak"
+      "value": "Vintage dress"
     },
     {
       "trait_type": "Lips",
-      "value": "Cherry exciting"
+      "value": "Mysterious pink"
     }
   ],
-  "compiler": "HashLips Art Engine"
+  "compiler": "Lorika_compilation"
 }

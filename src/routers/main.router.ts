@@ -1,7 +1,8 @@
 import express from "express";
 import path from "path";
 import { getBirthday } from "../services/contract";
-import { makeTokensOfOwnerJson, makeEmbrionData } from "../utils/makeData";
+import { makeTokensOfOwnerJson, makeEmbrionData, setCorrectImgURL } from "../utils/makeData";
+import fs from "fs";
 
 const router = express.Router();
 
@@ -20,7 +21,8 @@ router.get("/nft/:id", async (req, res) => {
             } else if (!isBirth) {
                 res.json({ error: "not burn yet" });
             } else {
-                res.sendFile(path.resolve(`./files/nft/${id}.json`));
+                const nftData = JSON.parse(fs.readFileSync(path.resolve(`./files/nft/${id}.json`), "utf8"));
+                res.json(setCorrectImgURL(nftData));
             }
         } else {
             res.status(404).json({
@@ -49,5 +51,5 @@ function checkDate(birthday) {
 
     const currentTime = Date.now() / 1000;
 
-    return currentTime > birthday + 432000; // current time > birthday + one week
+    return currentTime > birthday + 259200; // current time > birthday + 72 hours
 }
